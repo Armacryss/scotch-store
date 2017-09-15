@@ -1,7 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><router-link class="nav-link" to="/">Home</router-link></li>
+          <li class="nav-item"><router-link class="nav-link" to="/admin">Admin</router-link></li>
+          <li class="nav-item"><router-link class="nav-link" to="/cart">Cart</router-link></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -18,7 +28,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#content {
+  padding-top: 10px;
 }
 </style>
 

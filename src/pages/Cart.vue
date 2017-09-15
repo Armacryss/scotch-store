@@ -8,11 +8,12 @@
 
 <script>
 export default {
-  name:'home',
-  data () {
-      return {
-          msg: 'Welcome to Your Vue.Js App'
-      }
-  }
-}
+  name: 'cart',
+  data() {
+    return {
+      msg: 'Welcome to the Cart Page',
+    };
+  },
+};
 </script>
+
